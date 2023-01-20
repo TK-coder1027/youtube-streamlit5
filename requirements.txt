@@ -1,0 +1,5 @@
+streamlit == 1.17.0
+os
+google-cloud-texttospeech==2.14.0
+io
+
