@@ -1,6 +1,6 @@
 import os
 from google.cloud import texttospeech
-import io
+#import io
 import streamlit as st
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS']='secret.json'
