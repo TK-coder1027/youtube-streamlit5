@@ -5,31 +5,6 @@ import streamlit as st
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS']='secret.json'
 
-# from google.cloud import texttospeech
-
-# client = texttospeech.TextToSpeechClient()
-
-# synthesis_input = texttospeech.SynthesisInput(text="こんにちは、私は拓郎です")
-
-# voice = texttospeech.VoiceSelectionParams(
-#     language_code="ja-JP", ssml_gender=texttospeech.SsmlVoiceGender.MALE
-# )
-
-# audio_config = texttospeech.AudioConfig(
-#     audio_encoding=texttospeech.AudioEncoding.MP3
-# )
-
-# response = client.synthesize_speech(
-#     input=synthesis_input, voice=voice, audio_config=audio_config
-# )
-
-# filename = 'output.mp3'
-# with open(filename , "wb") as out:
-#     # Write the response to the output file.
-#     out.write(response.audio_content)
-#     print('Audio content written to file "output.mp3"')
-#     print(f'音声データは{filename}ファイルに書きだしました')
-
 def synthesize_speech(text, lang='日本語', gender='default'):
     gender_type = {
         'default':texttospeech.SsmlVoiceGender.SSML_VOICE_GENDER_UNSPECIFIED,
